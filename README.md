@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Nandhini — Developer Portfolio
+A modern, responsive, animated, and professional portfolio website built with Next.js, Tailwind CSS, Framer Motion, and EmailJS.
 
-## Getting Started
+This portfolio showcases my projects, skills, experience, and provides an easy way for recruiters and clients to contact me.
 
-First, run the development server:
+🎨 Tech Stack & Tools
+Frontend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+⚛️ React
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+▲ Next.js 14
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🎨 Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎞 Framer Motion
 
-## Learn More
+🧩 TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+Backend / Tools
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✉️ EmailJS (Contact Form)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🛠 Git & GitHub
 
-## Deploy on Vercel
+▲ Deployed on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🌟 Features
+✔ Fully Responsive
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Optimized for mobile, tablet, and large screens.
+
+✔ Modern Animations
+
+Smooth transitions and fades using Framer Motion.
+
+✔ Clean UI/UX
+
+Gradient backgrounds, glassmorphism, elegant spacing.
+
+✔ Live Projects Section
+
+Each project includes demo, code links, and tech stack.
+
+✔ About Me Page
+
+Professional introduction, skill tags, and developer journey.
+
+✔ Contact Form
+
+Working email form using EmailJS → Messages go directly to my Gmail.
+
+💼 Projects Included
+
+🛒 QuickCart E-Commerce — Modern online shopping UI
+
+🌍 BluBox Exports Website — Fully deployed business site
+
+🍽 Smart Restaurant App — Real client project
+
+🎨 + more interactive UI sections
+
+👩‍💻 About Me
+
+I am a passionate Front-end & Back-end Developer focused on creating meaningful, user-friendly digital experiences.
+I love building:
+
+Responsive websites
+
+Reusable components
+
+Scalable UI
+
+API-driven applications
+
+I work with technologies like React, Next.js, TypeScript, Node.js, MongoDB, and more.
+
+💌 Message to Hiring Teams & Recruiters
+
+Thank you for taking the time to review my portfolio.
+
+I am actively seeking opportunities where I can:
+
+Build real-world projects
+
+Contribute to a talented team
+
+Grow as a developer
+
+Learn modern technologies
+
+Add value through clean, maintainable code
+
+If you’re searching for someone who is:
+
+✔ Passionate about clean and scalable development
+
+✔ Strong in both Front-end & Back-end
+
+✔ Quick to learn & adapt
+
+✔ Comfortable working with React, Next.js & APIs
+
+✔ Ready to take responsibility and deliver value
+
+…then I would love to connect with you!
+
+📩 Email:
+
+nandhini120904@gmail.com
+
+🔗 LinkedIn:
+
+[https://www.linkedin.com/in/nandhini-r-b340b34](https://www.linkedin.com/in/nandhini-r-b340b1347/)
+
+Thank you for your time and consideration —
+Looking forward to potentially working with your team! 🚀
