@@ -21,7 +21,7 @@ export default function Footer() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#contact"
+            href="/contact"
             className="inline-block mt-5 px-6 py-2 rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-semibold shadow-lg"
           >
             Message Me

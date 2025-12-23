@@ -22,7 +22,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="/assets/NandhiniCV.pdf"
+          href="/assets/CV NANDHINI.pdf"
           className="hidden md:inline-block bg-[#ff255b] text-white px-5 py-2 rounded-full text-sm"
         >
           Resume
