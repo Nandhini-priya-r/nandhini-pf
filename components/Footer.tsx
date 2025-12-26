@@ -1,77 +1,151 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
+/* ----------------------------------------
+   Reusable Footer Section
+----------------------------------------- */
+function FooterSection({
+  title,
+  align = "left",
+  children,
+}: {
+  title: string;
+  align?: "left" | "right";
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      className={`space-y-4 ${
+        align === "right"
+          ? "md:ml-auto md:text-right"
+          : "text-left"
+      }`}
+    >
+      <h3 className="text-xl font-semibold text-teal-300 tracking-wide">
+        {title}
+      </h3>
+      {children}
+    </div>
+  );
+}
+
+/* ----------------------------------------
+   Reusable Social Link
+----------------------------------------- */
+function SocialLink({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <motion.a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      whileHover={{ scale: 1.2 }}
+      className="transition"
+    >
+      {children}
+    </motion.a>
+  );
+}
+
+/* ----------------------------------------
+   Footer Component
+----------------------------------------- */
 export default function Footer() {
   return (
-    <footer className="bg-[linear-gradient(135deg,#150f24,#2b1b3d,#4a3470)] text-white py-16 px-6 mt-20">
+    <footer className="mt-24 bg-[linear-gradient(135deg,#150f24,#2b1b3d,#4a3470)] text-white">
 
-      {/* Main Layout */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="container mx-auto max-w-7xl px-6 py-16">
 
-        {/* Work With Me Section */}
-        <div className="md:text-left text-left">
-          <h3 className="text-2xl font-bold mb-3 bg-gradient-to-r from-teal-400 to-teal-400 bg-clip-text text-transparent">
-            WANT TO WORK WITH ME
-          </h3>
-          <p className="text-gray-300 leading-relaxed">
-            Then post your interest and information about the project to me.
-          </p>
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
 
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="/contact"
-            className="inline-block mt-5 px-6 py-2 rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-semibold shadow-lg"
-          >
-            Message Me
-          </motion.a>
+          {/* LEFT — WORK WITH ME */}
+          <FooterSection title="WANT TO WORK WITH ME">
+            <p className="text-gray-300 leading-relaxed max-w-sm">
+              Share your project ideas or collaboration details and let’s build
+              something impactful together.
+            </p>
+
+            <motion.a
+              href="/contact"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block mt-4 w-fit rounded-lg bg-pink-600 px-6 py-2 font-semibold shadow-lg hover:bg-pink-700"
+            >
+              Message Me
+            </motion.a>
+          </FooterSection>
+
+          {/* CENTER — CONTACT */}
+          <FooterSection title="CONTACT" align="right">
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 md:justify-end">
+                <Mail className="h-5 w-5 text-pink-400" />
+                <span className="text-gray-300">
+                  nandhini120904@gmail.com
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3 md:justify-end">
+                <Phone className="h-5 w-5 text-pink-400" />
+                <span className="text-gray-300">
+                  +91 99768 57298
+                </span>
+              </div>
+            </div>
+          </FooterSection>
+
+          {/* RIGHT — CONNECT */}
+          <FooterSection title="CONNECT" align="right">
+            <p className="text-gray-400 mb-3">
+              © Nandhini Raghupathi
+            </p>
+
+            <div className="flex gap-6 md:justify-end">
+              <SocialLink
+                href="https://github.com/Nandhini-priya-r"
+                label="GitHub"
+              >
+                <Github className="h-6 w-6 text-gray-300 hover:text-white" />
+              </SocialLink>
+
+              <SocialLink
+                href="https://www.linkedin.com/in/nandhini-r-b340b1347/"
+                label="LinkedIn"
+              >
+                <Linkedin className="h-6 w-6 text-blue-500 hover:text-blue-400" />
+              </SocialLink>
+
+              <SocialLink
+                href="mailto:nandhini120904@gmail.com"
+                label="Email"
+              >
+                <Mail className="h-6 w-6 text-red-400 hover:text-red-300" />
+              </SocialLink>
+            </div>
+          </FooterSection>
+
         </div>
 
-        {/* Contact Section */}
-        <div className="md:text-left text-left">
-          <h3 className="text-xl font-semibold mb-3 text-teal-300">CONTACTS</h3>
+        {/* DIVIDER */}
+        <div className="my-12 h-px w-full bg-gray-700/40" />
 
-          <div className="flex items-center gap-3 mb-2">
-            <Mail className="w-5 h-5 text-pink-400" />
-            <p className="text-gray-300">nandhini120904@gmail.com</p>
-          </div>
+        {/* BOTTOM */}
+        <p className="text-center text-sm text-gray-400">
+          Designed with ❤️ by Nandhini
+        </p>
 
-          <div className="flex items-center gap-3">
-            <Phone className="w-5 h-5 text-pink-400" />
-            <p className="text-gray-300">+91 9976857298</p>
-          </div>
-        </div>
-
-        {/* Socials Section */}
-        <div className="md:text-left text-left">
-          <h3 className="text-xl font-semibold mb-3 text-teal-300">SUPPORT</h3>
-          <p className="text-gray-400 mb-4">© Nandhini Raghupathi</p>
-
-          <div className="flex items-center gap-6">
-            <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Nandhini-priya-r" target="_blank">
-              <Github className="w-6 h-6 text-gray-300 hover:text-white cursor-pointer" />
-            </motion.a>
-
-            <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/nandhini-r-b340b34" target="_blank">
-              <Linkedin className="w-6 h-6 text-blue-500 hover:text-blue-400 cursor-pointer" />
-            </motion.a>
-
-            <motion.a whileHover={{ scale: 1.2 }} href="mailto:nandhini120904@gmail.com">
-              <Mail className="w-6 h-6 text-red-400 hover:text-red-300 cursor-pointer" />
-            </motion.a>
-          </div>
-        </div>
       </div>
-
-      {/* Divider */}
-      <div className="mt-12 w-full h-[1px] bg-gray-700/40"></div>
-
-      {/* Bottom Text */}
-      <p className="text-center text-gray-400 mt-6 text-sm">
-        Designed with ❤️ by Nandhini
-      </p>
-
     </footer>
   );
 }
