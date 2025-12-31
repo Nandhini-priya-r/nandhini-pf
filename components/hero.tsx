@@ -72,7 +72,7 @@ export default function Home() {
           </h1>
 
           <h3 className="text-2xl md:text-3xl font-light">
-            Front-end Developer & Back-end Developer
+           Front-End & Back-End Developer
           </h3>
         </motion.div>
       </section>

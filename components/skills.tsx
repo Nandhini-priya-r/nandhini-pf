@@ -55,9 +55,7 @@ export default function PortfolioLanding() {
     >
       <div className="container mx-auto">
         <div className="section-inner px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-40">
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
             {/* ---------------- LEFT CONTENT ---------------- */}
             <div>
               <motion.div
@@ -79,10 +77,11 @@ export default function PortfolioLanding() {
                 transition={{ delay: 0.25, duration: 0.6 }}
                 className="text-gray-300 leading-relaxed mb-6"
               >
-                I have strong frontend and full-stack development skills, with
-                hands-on experience creating responsive and user-focused web
-                applications. My frontend expertise includes HTML, CSS,
-                JavaScript, TypeScript, React.js, and Next.js.
+                I am a frontend-focused full-stack developer with hands-on
+                experience building responsive, user-centric web applications.
+                My frontend expertise includes HTML, CSS, JavaScript,
+                TypeScript, React.js, and Next.js, with a strong emphasis on
+                performance and clean UI design.
               </motion.p>
 
               <motion.p
@@ -92,7 +91,8 @@ export default function PortfolioLanding() {
                 className="text-gray-300 leading-relaxed mb-4"
               >
                 On the full-stack side, I work with Node.js, Express, MongoDB,
-                and Git/GitHub to develop scalable APIs and manage databases.
+                and Git/GitHub to build scalable APIs and manage application
+                data efficiently.
               </motion.p>
 
               <motion.p
@@ -101,8 +101,9 @@ export default function PortfolioLanding() {
                 transition={{ delay: 0.55, duration: 0.6 }}
                 className="text-gray-300 leading-relaxed"
               >
-                With a strong programming foundation in C and Java, I improve
-                my problem-solving and system-level understanding.
+                I also have a solid programming foundation in C and Java, which
+                strengthens my problem-solving skills and system-level
+                understanding.
               </motion.p>
             </div>
 
@@ -120,7 +121,6 @@ export default function PortfolioLanding() {
                 className="w-[480px] md:w-[580px] drop-shadow-2xl"
               />
             </motion.div>
-
           </div>
         </div>
       </div>

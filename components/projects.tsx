@@ -12,7 +12,7 @@ const projects = [
     slug: "quick-cart",
     desc: "A modern and responsive e-commerce platform built for fast shopping, dynamic cart management, and smooth checkout experience.",
     image: "/assets/projects/qcart.png",
-    tech: ["Next.js", "Tailwind CSS", "MongoDB", "JavaScript"],
+    tech: ["Next.js", "MongoDB", "JavaScript"],
     liveLink: "https://quick-cart-six-theta.vercel.app/",
   },
   {

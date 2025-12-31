@@ -141,9 +141,11 @@ export default function AboutSection() {
             <div className="w-24 h-[3px] bg-teal-400 rounded-full mt-4"></div>
 
             <p className="mt-6 leading-8 text-white/90">
-              I am a dedicated Full Stack Developer skilled in building
-              responsive front-end interfaces using{" "}
-              <strong>React, Node.js, TypeScript</strong>.
+              I am a dedicated Full Stack Developer with strong expertise in
+              building responsive and high-performance web applications using{" "}
+              <strong>React, Node.js, TypeScript</strong>. I focus on creating
+              clean, reusable components, seamless API integrations, and
+              scalable, maintainable code.
             </p>
 
             <p className="mt-4 leading-8 text-white/90">
@@ -152,8 +154,9 @@ export default function AboutSection() {
             </p>
 
             <p className="mt-4 leading-8 text-white/90">
-              I love building interactive user experiences with smooth
-              animations.
+              I enjoy crafting interactive user experiences with smooth
+              animations and thoughtful UI design, ensuring both performance and
+              usability across devices.
             </p>
 
             {/* SKILL TAGS */}
