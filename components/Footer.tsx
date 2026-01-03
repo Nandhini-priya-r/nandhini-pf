@@ -60,7 +60,7 @@ export default function Footer() {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-14 items-start">
 
   {/* LEFT */}
-  <div className="justify-self-center">
+  <div className="justify-self-start md:justify-self-center">
     <div className="max-w-md text-left">
       <FooterSection title="WANT TO WORK WITH ME">
         <p className="text-gray-300 leading-relaxed">
@@ -81,7 +81,7 @@ export default function Footer() {
   </div>
 
   {/* CONTACT */}
-  <div className="justify-self-center">
+  <div className="justify-self-start md:justify-self-center">
     <div className="max-w-md text-left">
       <FooterSection title="CONTACT">
         <div className="space-y-4">
@@ -104,7 +104,7 @@ export default function Footer() {
   </div>
 
   {/* CONNECT */}
-  <div className="justify-self-center">
+  <div className="justify-self-start md:justify-self-center">
     <div className="max-w-md text-left">
       <FooterSection title="CONNECT">
         <p className="text-gray-400">
@@ -116,7 +116,10 @@ export default function Footer() {
             <Github className="h-6 w-6 text-gray-300 hover:text-white" />
           </SocialLink>
 
-          <SocialLink href="https://www.linkedin.com/in/nandhini-r-b340b1347/" label="LinkedIn">
+          <SocialLink
+            href="https://www.linkedin.com/in/nandhini-r-b340b1347/"
+            label="LinkedIn"
+          >
             <Linkedin className="h-6 w-6 text-blue-500 hover:text-blue-400" />
           </SocialLink>
 
@@ -129,6 +132,7 @@ export default function Footer() {
   </div>
 
 </div>
+
 
 
         {/* DIVIDER */}

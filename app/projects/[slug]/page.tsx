@@ -22,19 +22,19 @@ export default async function ProjectCaseStudy({ params }: PageProps) {
   return (
     <main className="bg-[#0b0b0e] text-white pb-32">
       {/* ================= HERO ================= */}
-      <section className="pt-32 pb-28 text-center px-4">
-        <span className="inline-block mb-6 rounded-full border border-blue-500/30 px-5 py-2 text-sm text-blue-400">
+      <section className="pt-28 pb-24 text-center px-4">
+        <span className="inline-block mb-5 rounded-full border border-blue-500/30 px-4 py-2 text-xs tracking-wide text-blue-400">
           Production Case Study
         </span>
 
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">
           {project.title.split(" ")[0]}{" "}
-          <span className="text-blue-500">
+          <span className="text-blue-500 block sm:inline">
             {project.title.replace(project.title.split(" ")[0], "")}
           </span>
         </h1>
 
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed">
+        <p className="max-w-[90%] sm:max-w-3xl mx-auto text-base sm:text-lg text-gray-400 leading-relaxed">
           {project.summary}
         </p>
 
@@ -50,29 +50,45 @@ export default async function ProjectCaseStudy({ params }: PageProps) {
             href={project.sourceCode}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-white/20 px-8 py-3 text-gray-300 hover:bg-white/10 transition"
+            className="
+    rounded-full
+    border border-white/20
+    px-12 py-3.5            /* ⬅ Bigger on mobile */
+    sm:px-8 sm:py-3        /* ⬅ Normal size on tablet+ */
+    text-gray-300
+    hover:bg-white/10
+    transition
+  "
           >
             Source Code
           </a>
         </div>
       </section>
+{/* ================= META ================= */}
+<section className="py-24">
+  <div className="container mx-auto max-w-6xl text-center">
 
-      {/* ================= META ================= */}
-      <section className="py-24">
-        <div className="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
-          <Meta title="MY ROLE" value={project.role} />
-          <Meta title="PROJECT TYPE" value="Production Application" />
-          <Meta title="PLATFORM" value="Web & Mobile" />
+    {/* ROW 1 : ROLE / TYPE / PLATFORM */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-14 mb-16">
+      <Meta title="MY ROLE" value={project.role} />
+      <Meta title="PROJECT TYPE" value="Production Application" />
+      <Meta title="PLATFORM" value="Web & Mobile" />
+    </div>
 
-          <Meta title="TECH STACK">
-            <div className="flex flex-wrap justify-center gap-3">
-              {project.tech.map((t) => (
-                <GradientPill key={t}>{t}</GradientPill>
-              ))}
-            </div>
-          </Meta>
+    {/* ROW 2 : TECH STACK (ALWAYS SEPARATE) */}
+    <div className="flex flex-col items-center">
+      <Meta title="TECH STACK">
+        <div className="flex flex-wrap justify-center gap-3 mt-6">
+          {project.tech.map((t) => (
+            <GradientPill key={t}>{t}</GradientPill>
+          ))}
         </div>
-      </section>
+      </Meta>
+    </div>
+
+  </div>
+</section>
+
 
       {/* ================= PROBLEM & SOLUTION ================= */}
       <section className="py-28">
